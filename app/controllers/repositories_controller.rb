@@ -8,7 +8,7 @@ class RepositoriesController < ApplicationController
 
   def create
     github = GithubService.new
-    @new_repo = github.create_repo(name:)
+    @new_repo = github.create_repo
     redirect_to '/'
   end
 end
