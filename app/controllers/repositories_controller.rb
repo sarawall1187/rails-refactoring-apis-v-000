@@ -1,8 +1,9 @@
 class RepositoriesController < ApplicationController
 
   def index
-    binding.pry
-    github = GithubService.new(@access_token = session[:token])
+  
+    github = GithubService.new(@access_token)
+      binding.pry
     @username = github.get_username
     @repos_array = github.get_repos
 
