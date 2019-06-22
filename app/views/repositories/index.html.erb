@@ -1,7 +1,6 @@
 <div class = "container">
 
   <h1><%= @username %>'s Repos</h1>
-  <% binding.pry %>
   <% @repos_array.each do |repo| %>
     <%= repo["name"] %><br>
   <% end %>
