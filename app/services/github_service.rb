@@ -23,6 +23,7 @@ class GithubService
     JSON.parse(repos.body).map do |repo|
        GithubRepo.new(repo)
     end
+    binding.pry
   end
 
   def create_repo(name)
