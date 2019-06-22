@@ -3,6 +3,7 @@
 
   <% @repos_array.each do |repo| %>
     <%= repo["name"] %><br>
+    <% binding.pry %>
   <% end %>
 
   <%= form_tag("/repositories/create", method: "post") do %>
