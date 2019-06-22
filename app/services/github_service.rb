@@ -24,7 +24,7 @@ class GithubService
 
     #  JSON.parse(repos.body)
     JSON.parse(repos.body).map do |repo|
-        # binding.pry
+        binding.pry
        GithubRepo.new(repo)
     end
   end
