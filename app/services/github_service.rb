@@ -2,7 +2,7 @@ class GithubService
   attr_accessor :access_token
 
   def initialize(access_hash = {})
-    binding.pry
+    # binding.pry
     @access_token = access_hash['access_token']
   end
 
